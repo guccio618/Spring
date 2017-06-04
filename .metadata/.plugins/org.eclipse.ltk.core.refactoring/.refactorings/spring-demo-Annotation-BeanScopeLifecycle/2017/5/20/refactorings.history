@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.jackie.springdemo.MainApp&apos; to &apos;MainApp_BeanScopes&apos;&#x0A;- Original project: &apos;spring-demo-Annotation-BeanScopeLifecycle&apos;&#x0A;- Original element: &apos;com.jackie.springdemo.MainApp&apos;&#x0A;- Renamed element: &apos;com.jackie.springdemo.MainApp_BeanScopes&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MainApp&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.jackie.springdemo{MainApp.java[MainApp" matchStrategy="1" name="MainApp_BeanScopes" qualified="false" references="true" similarDeclarations="false" stamp="1494789204636" textual="false" version="1.0"/>
+</session>

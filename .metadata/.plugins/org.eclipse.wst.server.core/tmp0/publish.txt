@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sat Jun 03 10:35:07 PDT 2017
+org.eclipse.jst.jee.server\:/binary\:/Users/jackie/Documents/Eclipse\ Workspace/Spring/spring-mvc-demo/WebContent/WEB-INF/lib/spring-web-4.3.8.RELEASE.jar=WEB-INF/lib/spring-web-4.3.8.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:/Users/jackie/Documents/Eclipse\ Workspace/Spring/spring-mvc-demo/WebContent/WEB-INF/lib/spring-web-4.3.8.RELEASE-sources.jar=WEB-INF/lib/spring-web-4.3.8.RELEASE-sources.jar

@@ -1,0 +1,51 @@
+package com.jackie.hibernate.demo;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.jackie.hibernate.demo.entity.Student;
+
+import java.util.List;
+
+public class QueryStudentDemo {
+
+	public static void main(String[] args) {
+		// create session factory
+		SessionFactory factory = new Configuration()
+								.configure("hibernate.cfg.xml")
+								.addAnnotatedClass(Student.class)
+								.buildSessionFactory();
+		
+		// create session
+		Session session = factory.getCurrentSession();
+		
+		try {
+			// start a transaction
+			session.beginTransaction();
+
+			// query students
+			List<Student> theStudents = session.createQuery("from Student").getResultList();
+			
+			// display students
+			theStudents.stream().forEach(student -> System.out.println(student));
+			
+			System.out.println();
+			
+			// query students: lastName = 'Chan'
+			theStudents = session.createQuery("from Student s where s.lastName='Chan'").getResultList();
+			theStudents.stream().forEach(student -> System.out.println(student));
+			
+			// commit transaction
+			session.getTransaction().commit();
+			System.out.println("Done!");
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			factory.close();
+		}
+		
+	}
+
+}

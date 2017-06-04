@@ -1,0 +1,21 @@
+package com.jackie.jdbc;
+
+public class TestJdbc {
+
+	public static void main(String[] args) {
+		// "useSSL=false" means get rid of MySQL SSL warnings
+		String jdbcUrl = "jdbc:mysql://localhost:3306/hb_student_tracker?useSSL=false";
+		String user = "hbstudent";
+		String password = "hbstudent";
+		
+		try {
+			
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}
